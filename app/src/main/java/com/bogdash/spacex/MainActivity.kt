@@ -7,6 +7,11 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
+    private val listFragment = listOf(
+        UpcomingFragment.newInstance(),
+        LaunchesFragment.newInstance(),
+        RocketsFragment.newInstance()
+    )
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
