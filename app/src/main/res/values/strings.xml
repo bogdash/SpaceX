@@ -14,4 +14,21 @@
     <string name="launch_site_value">Cape Canaveral Air Force Station Space Launch Complex 40</string>
     <string name="count_down_title">COUNT DOWN</string>
     <string name="count_down_value">5 Hrs 30mins more…</string>
+
+    <!-- Launches Fragment -->
+    <string name="rocket_name_1">Starlink 2</string>
+    <string name="rocket_name_2">DemoSat</string>
+    <string name="rocket_name_3">Falcon 9 Test</string>
+    <string name="rocket_name_4">CRS - 2</string>
+
+    <string name="complex_1">CCAES SLC 40</string>
+    <string name="complex_2">AAAES SLC 40</string>
+    <string name="complex_3">CCAES SEC 40</string>
+    <string name="complex_4">CAAES SLC 40</string>
+
+    <string name="date_1">16-12-2014</string>
+    <string name="date_2">06-07-2018</string>
+    <string name="date_3">18-03-2019</string>
+    <string name="date_4">18-12-2019</string>
+
 </resources>

@@ -11,18 +11,18 @@ import com.google.android.material.tabs.TabLayoutMediator
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
-    private val listFragment = listOf(
+    private val fragments = listOf(
         UpcomingFragment.newInstance(),
         LaunchesFragment.newInstance(),
         RocketsFragment.newInstance()
     )
 
-    private val titles = listOf(
-        "Upcoming", "Launches", "Rockets"
-    )
+    private val titles = listOf("Upcoming", "Launches", "Rockets")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initViewPager() {
         with(binding) {
-            val viewPagerAdapter = ViewPagerAdapter(this@MainActivity, listFragment)
+            val viewPagerAdapter = ViewPagerAdapter(this@MainActivity, fragments)
             viewPager.adapter = viewPagerAdapter
             TabLayoutMediator(tabLayout, viewPager) { tab, position ->
                 tab.text = titles[position]
