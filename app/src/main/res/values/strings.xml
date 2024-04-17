@@ -30,5 +30,15 @@
     <string name="date_2">06-07-2018</string>
     <string name="date_3">18-03-2019</string>
     <string name="date_4">18-12-2019</string>
+    
+    <!-- Rockets Fragment -->
+    <string name="rocket">ROCKET</string>
+
+    <string name="rocket_name_5">Falcon 1</string>
+    <string name="rocket_name_6">Falcon 9</string>
+    <string name="rocket_name_7">Big Falcon Rocket</string>
+
+    <string name="inactive">INACTIVE</string>
+    <string name="active">ACTIVE</string>
 
 </resources>

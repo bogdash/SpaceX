@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_picture_rockets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="21dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/falconsat01" />
+
+        <TextView
+            android:id="@+id/tv_rocket_rockets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="19dp"
+            android:fontFamily="@font/google_sans_medium"
+            android:text="@string/rocket"
+            android:textColor="@color/pink"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/iv_picture_rockets"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_rocket_name_rockets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:fontFamily="@font/google_sans_bold"
+            android:text="@string/rocket_name_5"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_rocket_rockets"
+            app:layout_constraintTop_toBottomOf="@+id/tv_rocket_rockets" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_rockets"
+            android:layout_width="69dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="9dp"
+            app:cardBackgroundColor="@color/red"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="@+id/tv_rocket_name_rockets"
+            app:layout_constraintTop_toBottomOf="@+id/tv_rocket_name_rockets">
+
+            <TextView
+                android:id="@+id/tv_active_rockets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/google_sans_regular"
+                android:text="@string/inactive"
+                android:textColor="@color/white"
+                android:textSize="8sp" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
