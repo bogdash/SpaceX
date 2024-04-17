@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".upcoming.UpcomingFragment"
+    android:background="@color/white"
     android:orientation="vertical"
     android:paddingStart="23dp"
     android:paddingEnd="32dp"
-    android:background="@color/white">
-    
+    tools:context=".upcoming.UpcomingFragment">
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
                 android:layout_marginTop="19dp"
                 android:fontFamily="@font/google_sans_regular"
                 android:text="@string/launch_text"
-                android:textColor="@color/red"
+                android:textColor="@color/pink"
                 android:textSize="10sp"
                 app:layout_constraintStart_toEndOf="@+id/imageView"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -89,54 +89,54 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/launch_date_title"
-        android:textColor="@color/red"
-        android:textSize="10sp"
+        android:layout_marginTop="53dp"
         android:fontFamily="@font/google_sans_regular"
-        android:layout_marginTop="53dp"/>
+        android:text="@string/launch_date_title"
+        android:textColor="@color/pink"
+        android:textSize="10sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/google_sans_regular"
         android:text="@string/launch_date_value"
         android:textColor="@color/black"
-        android:textSize="16sp"
-        android:fontFamily="@font/google_sans_regular"
-        android:layout_marginTop="11dp"/>
+        android:textSize="16sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/google_sans_regular"
         android:text="@string/launch_site_title"
-        android:textColor="@color/red"
-        android:textSize="10sp"
-        android:fontFamily="@font/google_sans_regular"
-        android:layout_marginTop="11dp"/>
+        android:textColor="@color/pink"
+        android:textSize="10sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/google_sans_regular"
         android:text="@string/launch_site_value"
         android:textColor="@color/black"
-        android:textSize="16sp"
-        android:fontFamily="@font/google_sans_regular"
-        android:layout_marginTop="11dp"/>
+        android:textSize="16sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/google_sans_regular"
         android:text="@string/count_down_title"
-        android:textColor="@color/red"
-        android:textSize="10sp"
-        android:fontFamily="@font/google_sans_regular"
-        android:layout_marginTop="11dp"/>
+        android:textColor="@color/pink"
+        android:textSize="10sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/google_sans_regular"
         android:text="@string/count_down_value"
         android:textColor="@color/black"
-        android:textSize="16sp"
-        android:fontFamily="@font/google_sans_regular"
-        android:layout_marginTop="11dp"/>
+        android:textSize="16sp" />
 </LinearLayout>

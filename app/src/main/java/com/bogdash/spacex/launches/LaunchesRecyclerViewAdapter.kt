@@ -8,19 +8,21 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bogdash.spacex.R
 
-class LaunchesRecyclerViewAdapter(private val rockets: ArrayList<Launch>) : RecyclerView.Adapter<LaunchesRecyclerViewAdapter.LaunchesViewHolder>() {
+class LaunchesRecyclerViewAdapter(private val launches: ArrayList<Launch>) :
+    RecyclerView.Adapter<LaunchesRecyclerViewAdapter.LaunchesViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LaunchesViewHolder {
-        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.item_launch, parent, false)
+        val itemView =
+            LayoutInflater.from(parent.context).inflate(R.layout.item_launch, parent, false)
         return LaunchesViewHolder(itemView)
     }
 
     override fun getItemCount(): Int {
-        return rockets.size
+        return launches.size
     }
 
     override fun onBindViewHolder(holder: LaunchesViewHolder, position: Int) {
-        val currentItem = rockets[position]
+        val currentItem = launches[position]
         holder.picture.setImageResource(currentItem.picture)
         holder.launch.text = currentItem.launch
         holder.rocketName.text = currentItem.rocketName
@@ -29,9 +31,9 @@ class LaunchesRecyclerViewAdapter(private val rockets: ArrayList<Launch>) : Recy
     }
 
     class LaunchesViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val picture: ImageView = itemView.findViewById(R.id.iv_picture)
-        val launch: TextView = itemView.findViewById(R.id.tv_launch)
-        val rocketName: TextView = itemView.findViewById(R.id.tv_rocket_name)
+        val picture: ImageView = itemView.findViewById(R.id.iv_picture_launch)
+        val launch: TextView = itemView.findViewById(R.id.tv_launch_launches)
+        val rocketName: TextView = itemView.findViewById(R.id.tv_rocket_name_launches)
         val complex: TextView = itemView.findViewById(R.id.tv_complex)
         val date: TextView = itemView.findViewById(R.id.tv_date)
     }

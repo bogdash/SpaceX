@@ -12,8 +12,8 @@ import com.bogdash.spacex.R
 class LaunchesFragment : Fragment() {
     private lateinit var adapter: LaunchesRecyclerViewAdapter
     private lateinit var recyclerView: RecyclerView
-    private lateinit var rockets: ArrayList<Launch>
-    private lateinit var rocketService: LaunchService
+    private lateinit var launches: ArrayList<Launch>
+    private lateinit var launchService: LaunchService
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -29,15 +29,15 @@ class LaunchesFragment : Fragment() {
     }
 
     private fun initData() {
-        rocketService = LaunchService(requireContext())
-        rockets = rocketService.getRockets()
+        launchService = LaunchService(requireContext())
+        launches = launchService.getLaunches()
     }
 
     private fun initRecyclerView(view: View) {
         val layoutManager = LinearLayoutManager(context)
         recyclerView = view.findViewById(R.id.launches_recycler_view)
         recyclerView.layoutManager = layoutManager
-        adapter = LaunchesRecyclerViewAdapter(rockets)
+        adapter = LaunchesRecyclerViewAdapter(launches)
         recyclerView.adapter = adapter
     }
 

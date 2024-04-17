@@ -13,7 +13,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/iv_picture"
+            android:id="@+id/iv_picture_launch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -25,20 +25,20 @@
             app:srcCompat="@drawable/crs" />
 
         <TextView
-            android:id="@+id/tv_launch"
+            android:id="@+id/tv_launch_launches"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="54dp"
             android:layout_marginTop="19dp"
             android:fontFamily="@font/google_sans_medium"
             android:text="@string/launch_text"
-            android:textColor="@color/red"
+            android:textColor="@color/pink"
             android:textSize="10sp"
-            app:layout_constraintStart_toEndOf="@+id/iv_picture"
+            app:layout_constraintStart_toEndOf="@+id/iv_picture_launch"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tv_rocket_name"
+            android:id="@+id/tv_rocket_name_launches"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="54dp"
@@ -46,8 +46,8 @@
             android:fontFamily="@font/google_sans_bold"
             android:text="@string/starlink_2_text"
             android:textSize="18sp"
-            app:layout_constraintStart_toEndOf="@+id/iv_picture"
-            app:layout_constraintTop_toBottomOf="@+id/tv_launch" />
+            app:layout_constraintStart_toEndOf="@+id/iv_picture_launch"
+            app:layout_constraintTop_toBottomOf="@+id/tv_launch_launches" />
 
         <TextView
             android:id="@+id/tv_complex"
@@ -58,8 +58,8 @@
             android:fontFamily="@font/google_sans_regular"
             android:text="@string/ccaex_text"
             android:textSize="12sp"
-            app:layout_constraintStart_toEndOf="@+id/iv_picture"
-            app:layout_constraintTop_toBottomOf="@+id/tv_rocket_name" />
+            app:layout_constraintStart_toEndOf="@+id/iv_picture_launch"
+            app:layout_constraintTop_toBottomOf="@+id/tv_rocket_name_launches" />
 
         <TextView
             android:id="@+id/tv_date"
@@ -72,7 +72,7 @@
             android:text="@string/date_text"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/iv_picture"
+            app:layout_constraintStart_toEndOf="@+id/iv_picture_launch"
             app:layout_constraintTop_toBottomOf="@+id/tv_complex" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

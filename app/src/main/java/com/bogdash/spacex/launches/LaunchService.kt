@@ -6,8 +6,8 @@ import com.bogdash.spacex.R
 class LaunchService(private val _context: Context) {
     private val context: Context = _context
 
-    fun getRockets(): ArrayList<Launch> {
-        val rockets = arrayListOf<Launch>()
+    fun getLaunches(): ArrayList<Launch> {
+        val launches = arrayListOf<Launch>()
 
         val pictureId = arrayOf(
             R.drawable.falconsat01,
@@ -17,16 +17,16 @@ class LaunchService(private val _context: Context) {
         )
 
         val launchId = R.string.launch_text
-        val launches = context.getString(launchId)
+        val launchTitles = context.getString(launchId)
 
-        val rocketNameId = arrayOf(
+        val launchNameId = arrayOf(
             R.string.rocket_name_1,
             R.string.rocket_name_2,
             R.string.rocket_name_3,
             R.string.rocket_name_4
         )
 
-        val rocketNames = rocketNameId.map { context.getString(it) }
+        val launchNames = launchNameId.map { context.getString(it) }
 
         val complexId = arrayOf(
             R.string.complex_1,
@@ -47,10 +47,10 @@ class LaunchService(private val _context: Context) {
         val dates = dateId.map { context.getString(it) }
 
         for (i in pictureId.indices) {
-            val rocket = Launch(pictureId[i], launches, rocketNames[i], complex[i], dates[i])
-            rockets.add(rocket)
+            val launch = Launch(pictureId[i], launchTitles, launchNames[i], complex[i], dates[i])
+            launches.add(launch)
         }
 
-        return rockets
+        return launches
     }
 }
