@@ -1,3 +1,47 @@
 <resources>
     <string name="app_name">SpaceX</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="launches">Launches</string>
+    <string name="rockets">Rockets</string>
+
+    <!-- Item launch -->
+    <string name="launch_text">LAUNCH</string>
+    <string name="starlink_2_text">Starlink 2</string>
+    <string name="ccaex_text">CCAES SLC 40</string>
+    <string name="date_text">16-10-2016</string>
+
+    <!-- UpcomingFragment -->
+    <string name="launch_date_title">LAUNCH DATE</string>
+    <string name="launch_date_value">Thu Oct 17 5:30:00 2019</string>
+    <string name="launch_site_title">LAUNCH SITE</string>
+    <string name="launch_site_value">Cape Canaveral Air Force Station Space Launch Complex 40</string>
+    <string name="count_down_title">COUNT DOWN</string>
+    <string name="count_down_value">5 Hrs 30mins more…</string>
+
+    <!-- Launches Fragment -->
+    <string name="rocket_name_1">Starlink 2</string>
+    <string name="rocket_name_2">DemoSat</string>
+    <string name="rocket_name_3">Falcon 9 Test</string>
+    <string name="rocket_name_4">CRS - 2</string>
+
+    <string name="complex_1">CCAES SLC 40</string>
+    <string name="complex_2">AAAES SLC 40</string>
+    <string name="complex_3">CCAES SEC 40</string>
+    <string name="complex_4">CAAES SLC 40</string>
+
+    <string name="date_1">16-12-2014</string>
+    <string name="date_2">06-07-2018</string>
+    <string name="date_3">18-03-2019</string>
+    <string name="date_4">18-12-2019</string>
+    
+    <!-- Rockets Fragment -->
+    <string name="rocket">ROCKET</string>
+
+    <string name="rocket_name_5">Falcon 1</string>
+    <string name="rocket_name_6">Falcon 9</string>
+    <string name="rocket_name_7">Big Falcon Rocket</string>
+
+    <string name="inactive">INACTIVE</string>
+    <string name="active">ACTIVE</string>
+
 </resources>
