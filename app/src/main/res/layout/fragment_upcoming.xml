@@ -39,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="54dp"
                 android:layout_marginTop="19dp"
-                android:fontFamily="@font/google_sans_regular"
+                android:fontFamily="@font/google_sans_medium"
                 android:text="@string/launch_text"
                 android:textColor="@color/pink"
                 android:textSize="10sp"
@@ -54,6 +54,7 @@
                 android:layout_marginTop="9dp"
                 android:fontFamily="@font/google_sans_bold"
                 android:text="@string/starlink_2_text"
+                android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintStart_toEndOf="@+id/imageView"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -90,7 +91,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="53dp"
-        android:fontFamily="@font/google_sans_regular"
+        android:fontFamily="@font/google_sans_medium"
         android:text="@string/launch_date_title"
         android:textColor="@color/pink"
         android:textSize="10sp" />
@@ -108,7 +109,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="11dp"
-        android:fontFamily="@font/google_sans_regular"
+        android:fontFamily="@font/google_sans_medium"
         android:text="@string/launch_site_title"
         android:textColor="@color/pink"
         android:textSize="10sp" />
@@ -126,7 +127,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="11dp"
-        android:fontFamily="@font/google_sans_regular"
+        android:fontFamily="@font/google_sans_medium"
         android:text="@string/count_down_title"
         android:textColor="@color/pink"
         android:textSize="10sp" />

@@ -45,6 +45,7 @@
             android:layout_marginTop="9dp"
             android:fontFamily="@font/google_sans_bold"
             android:text="@string/starlink_2_text"
+            android:textColor="@color/black"
             android:textSize="18sp"
             app:layout_constraintStart_toEndOf="@+id/iv_picture_launch"
             app:layout_constraintTop_toBottomOf="@+id/tv_launch_launches" />

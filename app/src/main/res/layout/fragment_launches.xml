@@ -3,13 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".launches.LaunchesFragment"
     android:paddingStart="23dp"
-    android:paddingEnd="32dp">
+    android:paddingEnd="32dp"
+    tools:context=".launches.LaunchesFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/launches_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
+        android:layout_height="wrap_content" />
 </FrameLayout>
