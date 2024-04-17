@@ -1,4 +1,4 @@
-package com.bogdash.spacex
+package com.bogdash.spacex.launches
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,8 +6,9 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bogdash.spacex.R
 
-class LaunchesRecyclerViewAdapter(private val rockets: ArrayList<Rocket>) : RecyclerView.Adapter<LaunchesRecyclerViewAdapter.LaunchesViewHolder>() {
+class LaunchesRecyclerViewAdapter(private val rockets: ArrayList<Launch>) : RecyclerView.Adapter<LaunchesRecyclerViewAdapter.LaunchesViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LaunchesViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.item_launch, parent, false)

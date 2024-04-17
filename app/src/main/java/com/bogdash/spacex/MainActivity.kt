@@ -6,6 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.bogdash.spacex.databinding.ActivityMainBinding
+import com.bogdash.spacex.launches.LaunchesFragment
+import com.bogdash.spacex.rockets.RocketsFragment
+import com.bogdash.spacex.upcoming.UpcomingFragment
 import com.google.android.material.tabs.TabLayoutMediator
 
 class MainActivity : AppCompatActivity() {

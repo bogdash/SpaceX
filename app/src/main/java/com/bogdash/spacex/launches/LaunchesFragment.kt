@@ -1,4 +1,4 @@
-package com.bogdash.spacex
+package com.bogdash.spacex.launches
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,12 +7,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.bogdash.spacex.R
 
 class LaunchesFragment : Fragment() {
     private lateinit var adapter: LaunchesRecyclerViewAdapter
     private lateinit var recyclerView: RecyclerView
-    private lateinit var rockets: ArrayList<Rocket>
-    private lateinit var rocketService: RocketService
+    private lateinit var rockets: ArrayList<Launch>
+    private lateinit var rocketService: LaunchService
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -28,7 +29,7 @@ class LaunchesFragment : Fragment() {
     }
 
     private fun initData() {
-        rocketService = RocketService(requireContext())
+        rocketService = LaunchService(requireContext())
         rockets = rocketService.getRockets()
     }
 

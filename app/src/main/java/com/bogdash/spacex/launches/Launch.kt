@@ -1,6 +1,6 @@
-package com.bogdash.spacex
+package com.bogdash.spacex.launches
 
-data class Rocket(
+data class Launch(
     val picture: Int,
     val launch: String,
     val rocketName: String,

@@ -1,12 +1,13 @@
-package com.bogdash.spacex
+package com.bogdash.spacex.launches
 
 import android.content.Context
+import com.bogdash.spacex.R
 
-class RocketService(private val _context: Context) {
+class LaunchService(private val _context: Context) {
     private val context: Context = _context
 
-    fun getRockets(): ArrayList<Rocket> {
-        val rockets = arrayListOf<Rocket>()
+    fun getRockets(): ArrayList<Launch> {
+        val rockets = arrayListOf<Launch>()
 
         val pictureId = arrayOf(
             R.drawable.falconsat01,
@@ -46,7 +47,7 @@ class RocketService(private val _context: Context) {
         val dates = dateId.map { context.getString(it) }
 
         for (i in pictureId.indices) {
-            val rocket = Rocket(pictureId[i], launches, rocketNames[i], complex[i], dates[i])
+            val rocket = Launch(pictureId[i], launches, rocketNames[i], complex[i], dates[i])
             rockets.add(rocket)
         }
 
