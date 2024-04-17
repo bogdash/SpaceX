@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">SpaceX</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="launches">Launches</string>
+    <string name="rockets">Rockets</string>
 
     <!-- Item launch -->
     <string name="launch_text">LAUNCH</string>

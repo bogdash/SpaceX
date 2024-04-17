@@ -31,11 +31,11 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="60dp"
+        android:background="@drawable/round_corner_top"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        android:orientation="vertical"
-        android:background="@drawable/round_corner_top">
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
 
         <com.google.android.material.tabs.TabLayout
@@ -43,22 +43,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:background="@color/white">
+            android:background="@color/white"
+            app:tabIndicator="@null"
+            app:tabSelectedTextColor="@color/pink"
+            app:tabTextAppearance="@style/TabLayoutTextStyle">
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Monday" />
+                android:text="@string/upcoming" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tuesday" />
+                android:text="@string/launches" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Wednesday" />
+                android:text="@string/rockets" />
         </com.google.android.material.tabs.TabLayout>
 
         <androidx.viewpager2.widget.ViewPager2
